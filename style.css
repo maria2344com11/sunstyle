@@ -1,0 +1,734 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #b5b5b7;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    padding-top: 70px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #054959;
+    font-size: 10px;
+    font-weight: bolder;
+}
+/************************************************************/
+
+.principal{
+    width: 100%;
+    height: 75vh;
+}
+.principal img{
+    width: 100%;
+}
+/****************************************************************/
+
+.conheca {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 30px 7%; /*padding: cima/baixo esquerda/direita;*/
+    background-color: white;
+}
+
+.conheca-item {
+    width: 410px;
+    text-align: center;
+}
+
+.titulo-amarelo {
+    color: #F2C12F;
+    text-align: center;
+    font-size: 15px;
+}
+
+.conheca-item img {
+    width: 70%;
+    height: 270px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-conheca {
+    display: inline-block;
+    width: 125px;
+    margin-top: 7px;
+    padding: 7px;
+    background-color: #054959;
+    color: #F2C12F;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.conheca-item p {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.3;
+    color: #555;
+}
+
+/***************************************************/
+.tamanho{
+    background-color: #4a3828;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tamanho h3{
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+/****************************************************/
+
+.quem-somos {
+    background-color: #054959;
+    color: white;
+    padding: 40px 8%;
+    margin-top: 30px;
+}
+
+.quem-somos  h2 {
+    text-align: center;
+    color: #F2C12F;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.quem-somos-conteudo {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.quem-somos-texto {
+    width: 50%;
+}
+
+
+.quem-somos-texto p {
+    font-size: 12px;
+    line-height: 1.6;/*espaço entre as linhas do mesmo texto.*/
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.quem-somos-imagens {
+    width: 50%;
+    display: grid;
+    /* Duas imagens por linha */
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+
+.quem-somos-imagens img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+/***************************************************/
+.time {
+    width: 100%;
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+
+.time h2 {
+    text-align: center;
+    color: #F2C12F;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.pessoas {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pessoa {
+    /* Cada uma ocupa espaço igual */
+    flex: 1;
+    text-align: center;
+}
+
+.pessoa img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* Faz a foto preencher o círculo */
+    object-fit: cover;
+    /* Espaço abaixo */
+    margin-bottom: 10px;
+}
+
+
+.pessoa h3 {
+    color: white;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.pessoa p {
+    font-size: 8px;
+    line-height: 1.4;
+    text-align: justify;
+    width: 150px;
+    margin: 0 auto;
+    color: #ebeaea;
+}
+
+
+/* =====================================================
+   POLÍTICA E QUALIDADE
+   ===================================================== */
+
+.politica {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 25px 10%;
+}
+
+.politica h2 {
+    color: #F2C12F;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.politica h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.politica p {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.botao-politica {
+    display: inline-block;
+    background-color: #054959;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   DIFERENCIAIS
+   ===================================================== */
+.diferenciais {
+    background-color: #F2C12F;
+    color: #054959;
+    padding: 35px 6% 25px;
+    text-align: center;
+}
+
+.diferenciais h2 {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+.lista-diferenciais {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.diferencial {
+    border: 1px solid #777;
+    padding: 30px 15px;
+    flex: 1;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icone img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+
+.diferencial h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.diferencial p {
+    font-size: 9px;
+    line-height: 1.4;/* Altura das linhas */
+}
+
+.botao-produtos {
+    display: inline-block;/* Faz o link se comportar como botão */
+    margin-top: 25px;
+    background-color: #054959;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 9px;
+}
+
+.botao-produtos:hover {
+    background-color: #ffffff;
+    color: #054959;
+}
+/**********************************************************/
+.fale-conosco {
+    background-color: #054959;
+    display: flex;
+    min-height: 300px;
+    margin-top: 10px;
+    
+}
+
+.contato-imagem {
+    width: 50%;
+}
+
+
+.contato-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formulario {
+    width: 40%;
+    padding: 35px;
+}
+
+.formulario h2 {
+    color: #F2C12F;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 10px;
+    /* Impede alteração de largura */
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    height: 70px;
+    /* Permite somente alteração vertical */
+    resize: vertical;
+}
+
+.formulario button {
+    width: 80px;
+    align-self: center;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #054959;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+
+.formulario button:hover {
+    background-color: #F2C12F;
+}
+
+/***************************************************/
+
+.colecao {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+}
+.flex {
+    background-color: #f5f5f0;
+}
+
+.colecao-texto {
+    width: 25%;
+}
+
+.colecao-texto span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #9bb5b0;
+}
+
+.colecao-texto h1 {
+    font-size: 26px;
+    color: #054959;
+    margin: 10px 0;
+}
+
+.colecao-texto p {
+    font-size: 9px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+
+.produtos {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.produto {
+    width: 150px;
+    min-height: 150px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+
+
+
+.produto img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.produto h3 {
+    font-size: 11px;
+    color: #054959;
+    margin-top: 5px;
+}
+
+.produto p {
+    font-size: 10px;
+    color: #999;
+    margin-top: 3px;
+}
+
+.flex {
+    background-color: #EEEEE8;
+}
+
+.neon {
+    background-color: #ffffff;
+}
+
+.premium {
+    background-color: #EEEEE8;
+}
+
+
+
+
+.destaque {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+
+}
+
+.box2 {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.destaque img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.corpo {
+  background-color: #f2c029;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.box h3 {
+  color: #024959; 
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.box p {
+  color: #4a3828; 
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #d9d9d9;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.letra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #4a3828;
+}
+
+
+
+.destaque {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+
+}
+
+.box2 {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.destaque img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.corpo {
+  background-color: #f2c029;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.box2 h3 {
+  color: #024959; 
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.box2 p {
+  color: #4a3828; 
+  font-size: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.botao {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #d9d9d9;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.letra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #4a3828;
+    padding-top: 50px;
+}
+/********************************************************************/
+
+.rodape {
+    width: 100%;
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
+    color: #4a3828;
+    box-sizing: border-box;
+    margin-top: 30px; /* espaço entre o conteúdo e o rodapé */
+    padding-top: 20px; /* espaço dentro do rodapé */
+}
+
+.rodape-conteudo {
+    display: flex; 
+    justify-content: space-between; /* separa os dois lados */
+    box-sizing: border-box;
+    margin-left: 100px; 
+}
+
+.rodape-esquerdo {
+    width: 45%;
+}
+
+.logo-rodape {
+    width: 120px;
+    height: auto;
+    display: block; /* faz a imagem ocupar seu próprio espaço */
+    margin-bottom: 25px; /* espaço abaixo do logo */
+}
+
+.contato {
+    font-size: 8px;
+    line-height: 1.5; /* espaço entre as linhas */
+}
+
+.contato p {
+    margin: 5px 0; /* espaço acima e abaixo dos textos */
+}
+
+.rodape-direito {
+    width: 50%;
+}
+
+.rodape-direito h2 {
+    color: #054959;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap; /* impede o texto de quebrar */
+    text-align: left;
+    margin: 12px 0 32px 0; /* espaço ao redor da frase */
+}
+
+.redes {
+    font-size: 8px;
+}
+
+.redes p {
+    display: flex; 
+    align-items: center; 
+    margin: 0 0 18px 0; /* espaço entre as redes */
+}
+
+.redes img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain; /* mantém a imagem sem deformar */
+    margin-right: 14px; /* espaço entre ícone e texto */
+}
+
+.redes span {
+    width: 22px; 
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    margin-right: 5px; /* espaço depois do ícone */
+}
+
+.copyright {
+    background-color: #c5c5c5;
+    text-align: center;
+    padding: 8px;
+}
+
+.copyright p {
+    font-size: 8px;
+    color: #4a3828;
+}
+
+
